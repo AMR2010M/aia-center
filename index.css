@@ -392,11 +392,11 @@ body{margin: 0px; padding: 0px}
     color: #aaa;
 }
 /* Navbar Styles */
-.navbar {
+.navbar  {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to bottom, #3daeff, rgb(254, 253, 255));
+    background: linear-gradient(to bottom, rgb(127, 83, 248), rgb(254, 253, 255));
     padding: 30px;;
 
     position: sticky;
