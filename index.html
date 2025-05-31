@@ -1,17 +1,17 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="google-site-verification" content="TNBKkaluYy9Yjf7SzBAyjOm6WpwnTPsrP8XOKyfxCsQ" />
-    <title>aia files,aixfiles,aisfiles </title>
+    <title>aia files aix files app templates ais files</title>
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="here you can access aix,aia,ais more free files for kodular,appybuilder,appinventor,niotron etc we offer tons of  free breathtaking templates,extensions and much more ">
+   
     <style>
         html, body {
             overflow-x: hidden;
             margin: 0;
             padding: 0;
-            width: 100%;
+            width: 100vw;
             box-sizing: border-box;
         }
         .main {
@@ -20,7 +20,7 @@
             padding: 0;
         }
         .play {
-            max-width: 100%;
+           width: 100vw;
             width: 400px;
             height: 600px;
             margin-left: auto;
@@ -30,12 +30,32 @@
         .grid-header {
             margin-top: 0;
         }
+        .search-bar-container {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+.search-bar-input {
+    width: 350px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1.5px solid #a259ff;
+    outline: none;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    box-shadow: 0 0 0px #a259ff;
+    background: #fff;
+}
+.search-bar-input:focus,
+.search-bar-input:hover {
+    border-color: #a259ff;
+    box-shadow: 0 0 16px 2px #a259ff, 0 0 4px 1px #fff inset;
+}
     </style>
 </head>
 <body>
-    
-    <header class="navbar">
-    
+  <header class="navbar" width="100%">
+        <div class="logo">aixfile</div>
         <nav>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -43,16 +63,16 @@
                 <li class="dropdown">
                     <a href="#more" class="dropdown-toggle">More</a>
                     <ul class="dropdown-menu">
-                        <li><a href="aix.html">aix (extensions)</a></li>
+                        <li><a href="settings.html">Settings</a></li>
                         <li><a href="dev.html">add your app</a></li>
-                        <li><a href="ais.html">ais(screen)</a></li>
+                        <li><a href="#darkmode">Dark Mode</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </li>
-                <li><a href="https://community-hub-167.created.app/">Community</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header><script src='https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js'></script>
+        </nav></header>
+<script src='https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js'></script>
 <script>
   window.addEventListener("DOMContentLoaded", function() {
     window.AgentInitializer.init({
@@ -69,185 +89,65 @@
       customizations: {
         "greeting": "Yes",
         "greetingMessage": "Hi! How can I assist you?",
-        "openByDefault": "No",
+        "openByDefault": "yes",
         "pulse": "Yes",
-        "position": "right",
+        "position": "left",
         "autoOpenChatIn": "0"
       },
-      isVoice: false,
+      isVoice: true,
     });
   });
 </script>
 
     <div class="main">
+        
+
+
+<!-- Search bar end -->
+
+<script>
+// Simple search functionality for app cards
+document.addEventListener("DOMContentLoaded", function() {
+    const searchBar = document.getElementById('searchBar');
+    if (!searchBar) return;
+    searchBar.addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        document.querySelectorAll('.app-card').forEach(card => {
+            const title = card.querySelector('.app-title, .quran')?.textContent.toLowerCase() || '';
+            const desc = card.querySelector('.app-description')?.textContent.toLowerCase() || '';
+            if (title.includes(query) || desc.includes(query)) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
         <h1 class="header head1 neon-text">aixfile.shop</h1>
-        <h4 class="header head2">much more than aia market</h4>
-        <a href="aix.html"><button class="mainbtn btn1">GET STARTED</button></a>
-        <h2 class="take grid-header" style="font-size: 70px;">take your app to the next level</h2>
-        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-        <dotlottie-player class="play"src="https://lottie.host/c1be4dc5-4ed7-4975-9e11-3d6ab439e582/JG6j5uba6P.lottie"
-            background="transparent" speed="1"></dotlottie-player>
+        <h4 class="header head2">much more than a market</h4>
+        <!-- Search bar start -->
 
-        <div class="testimonials-container">
-            <h1 class="testimonials-header">TEST MONIALS</h1>
-            <div class="testimonials-carousel">
-                <div class="testimonial-card">
-                    <img src="test1.png" alt="User 1" class="testimonial-image">
-                    <p class="testimonial-text">"this webiste is awesome"</p>
-                    <h4 class="testimonial-author">Safi Playz:</h4>
-                </div>
-                <div class="testimonial-card">
-                    <img src="47603_2.jpeg" alt="User 2" class="testimonial-image">
-                    <p class="testimonial-text">"Pretty coo! Keep up the good work"</p>
-                    <h4 class="testimonial-author">Pratham_Gokani </h4>
-                </div>
-                <div class="testimonial-card">
-                    <img src="291250_2.jpeg" alt="User 3" class="testimonial-image">
-                    <p class="testimonial-text">"liked it"</p>
-                    <h4 class="testimonial-author">-MG_TEAM_Businesse</h4>
-                </div>
-                <div class="testimonial-card">
-                    <img src="test3.png" alt="User 4" class="testimonial-image">
-                    <p class="testimonial-text">"awesome"</p>
-                    <h4 class="testimonial-author">knae_0</h4>
-                </div>
-            </div>
-        </div>
-    </div>
+       
+       
 
-    <!-- Removed empty containers here -->
-<h1 class='head2 header'>you can see also our aia professinal templates</h1>
-    <div class="app-grid-container">
-        <h2 class="header" id='apps'>developer:amrkhaled</h2>
-        <div class="app-grid">
-            <!-- App 1 -->
-            <div class="app-card">
-                <img src="13.png" alt="App 1" class="app-image">
-                <h3 class="app-title">tasbeeh app</h3>
-                <p class="app-description">A creative app for productivity.</p>
-                <a href="taspeeh (2) (7).aia" download class="download-btn">Download</a>
-            </div>
-            <!-- App 2 -->
-            <div class="app-card">
-                <img src="police-car (1).png" alt="App 2" class="app-image">
-                <h3 class="app-title">police game</h3>
-                <p class="app-description">An innovative app for design.</p>
-                <a href="racing (4).aia" download class="download-btn">Download</a>
-            </div>
-            <!-- App 3 -->
-            <div class="app-card">
-                <img src="fast-food.png" alt="App 3" class="app-image">
-                <h3 class="app-title">food seracher</h3>
-                <p class="app-description">A powerful app for developers.</p>
-                <a href="food (3).aia" download class="download-btn">Download</a>
-            </div>
-            <!-- Add more apps as needed -->
-        </div>
+<div class="cat">
+<div class="aix_con  card">
+    <h2 class="head2">free aix store</h2>
+    <h4 class="header">+1000 free extensions</h4>
+    <button class="catbtn">go there</button>
+   
+</div>
+<div class="aia_con  card">
+  <h2 class="head2">free aia store</h2>
+<h4 class="header">+100 free aia files</h4>
+<button class="catbtn">go there</button>
     </div>
-    <div class="app-grid-container">
-        <div class="app-grid">
-            <!-- App 1 -->
-            <div class="app-card">
-                <img src="qr-code.png" alt="App 1" class="app-image">
-                <h3 class="app-title">qr scanner</h3>
-                <p class="app-description">A creative app for productivity.</p>
-                <a href="oobprject (3).aia" download class="download-btn">Download</a>
-            </div>
-            <!-- App 2 -->
-            <div class="app-card">
-                <img src="business (1).png" alt="App 2" class="app-image">
-                <h3 class="app-title">market app</h3>
-                <p class="app-description">An innovative app for design.</p>
-                <a href="AK_MARKET (3).aia" download class="download-btn">Download</a>
-            </div>
-            <!-- App 3 -->
-            <div class="app-card">
-                <img src="uber.png" alt="App 3" class="app-image">
-                <h3 class="app-title">uber app</h3>
-                <p class="app-description">A powerful app for developers.</p>
-                <a href="uber.aia" download class="download-btn">Download</a>
-            </div>
-            <!-- Add more apps as needed -->
-        </div>
-    </div>
-    <div class="app-grid-container">
-        <div class="app-grid">
-            <!-- App 1 -->
-            <div class="app-card">
-                <img src="video (1).png" alt="App 1" class="app-image">
-                <h3 class="quran">storytube</h3>
-                <p class="app-description">A creative app for productivity.</p>
-                <a href="story_tube (13).aia" download class="download-btn">Download</a>
-            </div>
-            <!-- App 2 -->
-            <div class="app-card">
-                <img src="coloring.png" alt="App 2" class="app-image">
-                <h3 class="app-title"> kids coloring app</h3>
-                <p class="app-description">An innovative app for design.</p>
-                <a href="coloring (1) (1) (8).aia" download class="download-btn">Download</a>
-            </div>
-            <!-- App 3 -->
-            <div class="app-card">
-                <img src="images (6).jpeg" alt="App 3" class="app-image">
-                <h3 class="app-title">quran app</h3>
-                <p class="app-description">A powerful app for developers.</p>
-                <a href="malik (6) (1).aia" download class="download-btn">Download</a>
-            </div>
-            <!-- Add more apps as needed -->
-        </div>
-        <h2 class="header" id='apps'>developer:marco tanzi and soham shah</h2>
-    </div>
-    <div class="app-grid">
-        <!-- App 1 -->
-        <div class="app-card">
-            <img src="frog.jpg" alt="App 1" class="app-image">
-            <h3 class="app-title">frogger remeker by marco</h3>
-            <p class="app-description">cool  frog 2d game.</p>
-            <a href="Frogger_Remake.aia" download class="download-btn">Download</a>
-        </div>
-        <!-- App 2 -->
-        <div class="app-card">
-            <img src="images (6).jpeg" alt="App 2" class="app-image">
-            <h3 class="app-title">Space_Invaders by marco</h3>
-            <p class="app-description">Space_Invaders.aia game.</p>
-            <a href="Space_Invaders.aia" download class="download-btn">Download</a>
-        </div>
-        <!-- App 3 -->
-        <div class="app-card">
-            <img src="87a36656d74d52ed2c8cd5397ef13f21a24d2129_2_562x1000.jpeg" alt="todo list" class="app-image">
-            <h3 class="app-title">todo list by Soham_Shah</h3>
-            <p class="app-description">A powerful app for developers.</p>
-            <a href="Checklist.aia" download class="download-btn">Download</a>
-        </div>
-        <!-- Add more apps as needed -->
-    </div>
-
-    <h2 class="header" style="font-size: 70px;color: blueviolet;" id='apps'>appreciate our work</h2>
-    <div class="appreciate" style="justify-content: center; margin: auto;">
-<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-<dotlottie-player src="https://lottie.host/a3917e8a-78ef-4ad6-b46c-93420e1763f7/MWXJ9wChi7.json" background="transparent" speed="1" style="width: 300px; height: 300px ; margin-left:80px;" loop autoplay></dotlottie-player>
-        <h1 class="header" style="font-size: 40px;color:black;">join our community and give us your feedback</h1>
-     <a href='https://community-hub-167.created.app/'>   <button class="mainbtn">join community</button></a>
-    </div>
-
-    <h2 class="header" style="font-size: xx-large;color: blueviolet;">we are growing</h2>
-    <div class="growing">
-        <dotlottie-player
-            src="https://lottie.host/6199c152-2aef-4b58-a672-1af71be73119/MtmYdv3EOZ.lottie"
-            background="transparent" speed="1"
-            style="max-width:100%; width: 400px; height: 400px;"></dotlottie-player>
-        <div class="growing-text">
-            <p class="growing-description">now it's time you helped us grow and shared your app with us!</p>
-            <a href="dev.html">
-                <button class="growing-btn">share your app now</button>
-            </a>
-        </div>
-    </div>
-
+</div>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
-                <h3 class="footer-title">About AIA Hub</h3>
+                <h3 class="footer-title">About aixfile.shop</h3>
                 <p class="footer-text">AIA Hub is your go-to platform for creative, free, and easy-to-use app templates. Empowering developers and creators worldwide.</p>
             </div>
             <div class="footer-section">
@@ -273,8 +173,8 @@
             <p>&copy; 2025 AIA Hub. All rights reserved.</p>
             <p style="color: blueviolet;">
                 developed by eng
-                <a href="https://community.kodular.io/u/Amr_Kilany/activity'>
-                    <button style="background-color: rgb(208, 229, 245); padding: 5px; border-radius: 4px; color:black">amr kilany</button>
+                <a href="https://community.kodular.io/u/amr_kilany/summary">
+                    <button style="background-color: rgb(208, 229, 245); padding: 5px; border-radius: 4px;">amr kilany</button>
                 </a>
             </p>
         </div>
@@ -331,5 +231,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+
 </body>
 </html>
